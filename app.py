@@ -10,7 +10,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 app.config['SECRET_KEY'] = "random string"
 Session(app)
 # using SQL module from cs50 library
-db = SQL("sqlite:///project.db", connect_args={'check_same_thread': False})
+db = SQL("sqlite:///database.db", connect_args={'check_same_thread': False})
 # encryption module
 bcrypt = Bcrypt(app)
 # homepage
