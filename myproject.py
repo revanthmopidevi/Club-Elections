@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_COOKIE_SECURE"] = True
 app.config["SESSION_TYPE"] = "filesystem"
-app.config['SECRET_KEY'] = "$2b$12$907qTAme2766ieqo2RmFweiXOJln6TT4mAXGEuw38p5nHO9HGR6MK"
+app.config['SECRET_KEY'] = "secret_key"
 Session(app)
 # using SQL module from cs50 library
 db = SQL("sqlite:///project.db", connect_args={'check_same_thread': False})
@@ -288,4 +288,4 @@ def logout():
     return render_template("logout.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
