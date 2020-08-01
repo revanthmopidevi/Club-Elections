@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100vh;">
     <head>
         <title>Election Commission | BPHC</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/static/CSS/login.css">
         <link rel="icon" type="image/png" href="/static/resources/icon.png">
         <script type="text/javascript"> 
             window.history.forward(); 
             function noBack() { 
                 window.history.forward(); 
             } 
-        </script> 
+        </script>
+        <style>
+            html, body
+            {height:100vh;}
+            .container
+            {
+                display:flex;
+                flex-flow:column wrap;
+                align-content:center;
+                justify-content:center;
+                height:100vh;
+                margin:auto
+            }    
+            .fixed-bottom,.row{text-align:center}
+            img{transition:all 1s}
+            img:hover{transform:scale(1.2)}
+        </style>
     </head>
     <body>
         <div class="container">
@@ -28,7 +43,22 @@
                 </div><br>
                 <div class="row">
                     <div class="col">
-                        <button type="submit" id="login" class="btn btn-success">Login</button>
+                        <select name="club"  class="custom-select custom-select-sm" id="clublist" required>
+                            <option value="" disabled selected>Club</option>
+                            <option value="COOKING">Cooking Club</option>
+                            <option value="DANCE">Dance Club</option>
+                            <option value="DRAMA">Dramatics Club</option>
+                            <option value="ELAS">English Language Activities Society</option>
+                            <option value="JC">Journal Club</option>
+                            <option value="PHOTOG">Photog Club</option>
+                            <option value="SAFL">Sanskrit and Foreign Languages Club</option>
+                            <option value="SHADES">Shades Club</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" data-toggle="tooltip" data-placement="bottom" title="confirm submission" id="login" class="center btn btn-success">Login</button>
                     </div>
                 </div>
             </form><br>

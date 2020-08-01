@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Election Commission | BPHC</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/static/resources/icon.png">
+        <script type="text/javascript"> 
+            window.history.forward(); 
+            function noBack() { 
+                window.history.forward(); 
+            } 
+        </script>
+        <style>
+            .container{display:flex;flex-flow:column wrap;align-content:center;justify-content:center;height:100vh;margin:auto;font-weight:700}
+            .center,.fixed-bottom{text-align:center}
+            img{transition:all 1s}
+            img:hover{transform:scale(1.15)}
+            h6{font-weight:600}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="/static/resources/logo.jpg" alt="election.commission@hyderabad.bits-pilani.ac.in" height="80px" width="240px">
+            <form method="POST" action="/DRAMA">
+                <hr><h6 class="center">Secretary, Dramatics Club</h6><hr>
+                <div class="inputs">
+                    <input type="radio" name="S" value="AS" required>
+                    <label>Abhidev Sharma</label>
+                </div>
+                <div class="inputs">
+                    <input type="radio" name="S" value="S">
+                    <label>Samar</label>
+                </div>
+                <button type="submit" class="center btn btn-success">Vote</button>
+            </form><br>
+        </div>
+    </body>
+    <div class="fixed-bottom">
+        <footer>
+            election.commission@hyderabad.bits-pilani.ac.in
+        </footer>
+    </div> 
+</html>
