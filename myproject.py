@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session,request, redirect, flash
+from flask import Flask, render_template, session,request, redirect
 from flask_session import Session
 from cs50 import SQL
 from flask_bcrypt import Bcrypt
