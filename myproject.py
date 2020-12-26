@@ -1,40 +1,3 @@
-
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@revanthmopidevi
-revanthmopidevi /
-Online-Election-Platform
-
-1
-1
-
-    0
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-
-    Settings
-
-Delete myproject.py
-
-    master 
-
-@revanthmopidevi
-revanthmopidevi committed on Aug 3
-1 parent c0c7700 commit 19a65cdaf56550cd1801ebddd9047fecc05c1035
-Showing
-with 0 additions and 291 deletions.
-291 myproject.py
-@@ -1,291 +0,0 @@
 from flask import Flask, render_template, session,request, redirect
 from flask_session import Session
 from cs50 import SQL
@@ -326,23 +289,3 @@ def logout():
 
 if __name__ == '__main__':
     app.run()
-0 comments on commit 19a65cd
-@revanthmopidevi
-New Video support! Upload MP4 and MOV file types. Attach files by dragging & dropping, selecting or pasting them.
-
-You’re receiving notifications because you’re watching this repository.
-
-    © 2020 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
